@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planned Updates</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="./favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewOrigami • Artist</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <div class="page-container">
       <header>
         <h1>Welcome to the new Origami.com</h1>
         <p>A website by Adinah Levi</p>
       </header>
-
       <main>
         <p>← Back to <a href="./index.html">Main Page</a></p>
 
-        <h1>Planned Updates</h1>
+        <hr />
 
-        <ul>
-          <li>Tutorial section</li>
-          <li>Beginner models section</li>
-          <li>Category pages</li>
-          <li>Thumbnails for diagrams</li>
-          <li>Gallery for my own folded models</li>
-          <li>Pretty-ify the site</li>
-          <li>Sortable tables</li>
-        </ul>
+        <p id="creator-name">Loading...</p>
+        <table id="diagram-table">
+          <thead>
+            <tr>
+              <th>↓</th>
+              <th>Difficulty</th>
+              <th>Name</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
 
         <hr>
 
@@ -58,20 +60,22 @@
                                             '  '
         </pre>
 
-      <footer>
-        <p>
-          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
-          favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </p>
+        <footer>
+          <p>
+            <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
+            favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          </p>
 
-        <p>
-          Origami Crane ASCII art from
-          <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
-        </p>
+          <p>
+            Origami Crane ASCII art from
+            <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
+          </p>
 
-        <p>All rights for diagrams reserved by respective original creators.</p>
-      </footer>
+          <p>All rights for diagrams reserved by respective original creators.</p>
+        </footer>
       </main>
     </div>
+
+    <script type="module" src="./scripts/creator.js"></script>
   </body>
 </html>
