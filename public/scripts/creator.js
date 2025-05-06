@@ -45,7 +45,7 @@ async function loadDiagrams() {
                 <td>
                     <a href="${DIAGRAM_BASE_PATH}${diagram.filename}">PDF</a>
                 </td>
-                <td>${diagram.difficulty}</td>
+                <td id="difficulty-row">${diagram.difficulty}</td>
                 <td>${diagram.title}</td>
                 <td>${cats}</td>
             `;

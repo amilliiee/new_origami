@@ -3,15 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./scripts/theme-init.js" defer></script>
+
     <title>NewOrigami - Origami Archive</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+
+    <link href="./style.css" rel="stylesheet">
     <link rel="icon" href="./favicon.png">
   </head>
   <body>
     <div class="page-container">
       <header>
         <h1>Welcome to the new Origami.com</h1>
-        <p>A website by Adinah Levi</p>
+        <div id="dev-name">
+          <p>A website by Adinah Levi</p>
+          <button id="theme-toggle">🌒/☀️</button>
+        </div>
       </header>
 
       <main>
@@ -37,7 +44,7 @@
           <section id="updates">
             <p>This site is regularly being updated daily at 0:00 EST, please follow the <a href="https://neocities.org/site/neworigami">site</a> and leave feedback and comments in the <a href="http://neworigami.atabook.org">guestbook</a>.</p>
             <div class="update-info">
-              <p id="last-updated">Last updated: <a href="./updates.html">May 2, 2025</a></p>
+              <p id="last-updated">Last updated: <a href="./updates.html" id="update-date"></a></p>
               <a href="./todo.html">Planned updates</a>
             </div>
             <p>If you are having troubles seeing the updates, try refreshing the page</p>
@@ -48,8 +55,9 @@
 
         <div class="all-diagrams">
           <h2>All Diagrams</h2>
+          <a href="./all-diagrams.html" id="all-diagrams">Sorted by Name</a>
+          <!--<li><a href="./difficulty.html">All diagrams sorted by Category</a></li>-->
           <!--<li><a href="./difficulty.html">All diagrams sorted by Difficulty</a></li>-->
-          <a href="./name.html" id="all-diagrams">Sorted by Name</a>
         </div>
 
         <hr>
@@ -78,16 +86,25 @@
           <hr>-->
         <hr>
 
+        <!-- <div class="by-creator">
+          <h2>Diagrams by Creator</h2>
+          <ul id="creators-list">
+            <li>Loading...</li>
+          </ul>
+        </div> -->
         <div class="by-creator">
           <h2>Diagrams by Creator</h2>
           <ul id="creators-list">
             <li>Loading...</li>
           </ul>
+
         </div>
   
-        <hr>
+        <hr />
 
-        <pre>
+      </main>
+
+      <pre>
                           |b
                            ||
                            ||,
@@ -112,24 +129,23 @@
     &lt;------------------,_____      ,/~'  \ | ./ .'
                             `"""""""      `|_/\ /
                                             '  '
-        </pre>
+      </pre>
 
-        <footer>
-          <p>
-            <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
-          </p>
+      <footer>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
             
-          <p>
-            Origami Crane ASCII art from <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
-          </p>
+        <p>
+          Origami Crane ASCII art from <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
+        </p>
             
-          <p>All rights for diagrams reserved by respective original creators.</p>
-        </footer>
-      </main>
+        <p>All rights for diagrams reserved by respective original creators.</p>
+      </footer>
     </div>
 
-
     <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/themeToggle.js"></script>
 
   </body>
 </html>

@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./scripts/theme-init.js" defer></script>
+
     <title>Recent Updates</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+
+    <link href="./style.css" rel="stylesheet">
     <link rel="icon" href="./favicon.png">
   </head>
   <body>
     <div class="page-container">
       <header>
         <h1>Welcome to the new Origami.com</h1>
-        <p>A website by Adinah Levi</p>
+        <div id="dev-name">
+          <p>A website by Adinah Levi</p>
+          <button id="theme-toggle">🌒/☀️</button>
+        </div>
       </header>
       
       <main>
         <p>← Back to <a href="./index.html">Main Page</a></p>
 
         <hr />
+
         <h1>Recent Updates</h1>
         <div id="updates-container">
           <p>Loading updates...</p>
         </div>
 
         <hr />
+      </main>
 
-        <pre>
+      <pre>
                           |b
                            ||
                            ||,
@@ -50,24 +59,25 @@
     &lt;------------------,_____      ,/~'  \ | ./ .'
                             `"""""""      `|_/\ /
                                             '  '
-        </pre>
+      </pre>
 
-        <footer>
-          <p>
-            <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
-            favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
-          </p>
+      <footer>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
+          favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
 
-          <p>
-            Origami Crane ASCII art from
-            <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
-          </p>
+        <p>
+          Origami Crane ASCII art from
+          <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
+        </p>
 
-          <p>All rights for diagrams reserved by respective original creators.</p>
-        </footer>
+        <p>All rights for diagrams reserved by respective original creators.</p>
+      </footer>
+    </div>
 
-        <script type="module" src="./scripts/updates.js"></script>
-      </main>
+    <script type="module" src="./scripts/updates.js"></script>
+    <script type="module" src="./scripts/themeToggle.js"></script>
 
   </body>
 </html>

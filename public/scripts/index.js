@@ -67,26 +67,17 @@ async function loadDifficulties() {
     }
 };
 
-async function seeAll() {
-    try {
-        const data = await fetchData();
-        const all = sortByName(data.diagrams);
+async function updateDate() {
+    const updateDiv = document.getElementById('update-date');
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.toLocaleString('default', { month: 'short' });
+    const day = date.getDay();
 
-        document.getElementById('full-list').innerHTML = all
-            .map(d => `
-                <li>
-                    <a href="${DIAGRAM_BASE_PATH}${d.name}">
-                        ${d.name}
-                    </a>
-                </li>
-            `).join('')
-    } catch (e) {
-        console.error('Error:', e);
-        displayError('all-diagrams', 'Failed to load diagrams');
-    }
-};
+    updateDiv.textContent = `${month} ${day}, ${year}`;
+}
 
 document.addEventListener('DOMContentLoaded', loadCreators);
 document.addEventListener('DOMContentLoaded', loadCategories);
 document.addEventListener('DOMContentLoaded', loadDifficulties);
-//document.addEventListener('DOMContentLoaded', seeAll);
+updateDate();

@@ -2,8 +2,10 @@
   HTML content. To learn how to do something, just try searching Google for questions like
   "how to change link color." */
 :root {
-  --background-color: #1a1d23;
+  --light-backgorund-color: #fdf4dc;
+  --dark-background-color: #1a1d23;
   --off-white: #f8f4e9;
+  --near-black: #0f0f0f;
   --active-link: #1c76fd;
   --visited-link: #5491ee;
 }
@@ -15,10 +17,14 @@
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--off-white);
+  background-color: var(--light-background-color);
+  color: var(--near-black);
   font-family: 'Consolas';
   height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 a {
@@ -142,4 +148,38 @@ main h1 {
 
 .error {
   color: #d32f2f;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--off-white)
+}
+
+#difficulty-table, #category-table, #diagram-table {
+  text-align: center;
+  
+}
+
+table, th, td {
+  border: 1px solid gray;
+}
+
+tbody {
+  text-align: start;
+}
+
+th, td {
+  padding: 2px 3px;
+}
+
+#difficulty-row {
+  text-align: center;
 }

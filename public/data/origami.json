@@ -2,146 +2,213 @@
   "creators": [
     {
       "id": "afehl",
-      "name": "Alec A. Fehl"
+      "name": "Alec A. Fehl",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "aanselmo",
-      "name": "Andrew Anselmo"
+      "name": "Andrew Anselmo",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "acarpenter",
-      "name": "Andy Carpenter"
+      "name": "Andy Carpenter",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "avoyer",
-      "name": "Anibal Voyer"
+      "name": "Anibal Voyer",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "bcole",
-      "name": "Brian Cole"
+      "name": "Brian Cole",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "bewins",
-      "name": "Brian Ewins"
+      "name": "Brian Ewins",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "bstephens",
-      "name": "Bruce Stephens"
+      "name": "Bruce Stephens",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "cesseltine",
-      "name": "Charles Esseltine"
+      "name": "Charles Esseltine",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "dpetty",
-      "name": "David Petty"
+      "name": "David Petty",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "ecorrie",
-      "name": "Edwin Corrie"
+      "name": "Edwin Corrie",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "efridrikh",
-      "name": "Eugeny Fridrikh"
+      "name": "Eugeny Fridrikh",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "ebinzinger",
-      "name": "Evi Binzinger"
+      "name": "Evi Binzinger",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "fgilgado",
-      "name": "Fernando Gilgado"
+      "name": "Fernando Gilgado",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "fkawahata",
-      "name": "Fumiaki Kawahata"
+      "name": "Fumiaki Kawahata",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "gfolds",
-      "name": "GobblaFolds"
+      "name": "GobblaFolds",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "gwillow",
-      "name": "Gabriel Willow"
+      "name": "Gabriel Willow",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "hvgoubergen",
-      "name": "Herman van Goubergen"
+      "name": "Herman van Goubergen",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jcnolan",
-      "name": "J.C. Nolan"
+      "name": "J.C. Nolan",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jbraasch",
-      "name": "James B. Raasch III"
+      "name": "James B. Raasch III",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jharris",
-      "name": "Jerry Harris"
+      "name": "Jerry Harris",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jgilardi",
-      "name": "Joe Gilardi"
+      "name": "Joe Gilardi",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jnakashima",
-      "name": "Jo Nakashima"
+      "name": "Jo Nakashima",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "joksanen",
-      "name": "Jorma Oksanen"
+      "name": "Jorma Oksanen",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jmeeusen",
-      "name": "Jose Meeusen"
+      "name": "Jose Meeusen",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jwu",
-      "name": "Joseph Wu"
+      "name": "Joseph Wu",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "jmeakawa",
-      "name": "Jun Meakawa"
+      "name": "Jun Meakawa",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "kawasaki",
-      "name": "Kawasaki"
+      "name": "Kawasaki",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "kvgelder",
       "name": "Kero van Gelder",
-      "site": "https://web.archive.org/web/20080304032218/http://origami.kvi.nl/"
+      "site": "https://web.archive.org/web/20080304032218/http://origami.kvi.nl/",
+      "youtube": null
     },
     {
       "id": "kbest",
-      "name": "Kim Best"
+      "name": "Kim Best",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "kweidner",
-      "name": "Klaus Weidner"
+      "name": "Klaus Weidner",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "kmorigami",
       "name": "KM Origami",
-      "site": "http://kmorigami.blog12.fc2.com/"
+      "site": "http://kmorigami.blog12.fc2.com/",
+      "youtube": null
     },
     {
       "id": "kkasahara",
-      "name": "Kunihiko Kasahara"
+      "name": "Kunihiko Kasahara",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "mvgelder",
       "name": "Maarten van Gelder",
-      "site": "https://web.archive.org/web/20080304032218/http://origami.kvi.nl/"
+      "site": "https://web.archive.org/web/20080304032218/http://origami.kvi.nl/",
+      "youtube": null
     },
     {
       "id": "mkirschenbaum",
-      "name": "Marc Kirschenbaum"
+      "name": "Marc Kirschenbaum",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "mvanglada",
-      "name": "Marc Vigo Anglada"
+      "name": "Marc Vigo Anglada",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "mmichaelis",
@@ -151,36 +218,51 @@
     },
     {
       "id": "movermars",
-      "name": "Mark Overmars"
+      "name": "Mark Overmars",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "mymckinnon",
-      "name": "Mark Y. McKinnon"
+      "name": "Mark Y. McKinnon",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "mlafosse",
-      "name": "Michael LaFosse"
+      "name": "Michael LaFosse",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "nrobinson",
-      "name": "Nick Robinson"
+      "name": "Nick Robinson",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "osn",
-      "name": "Origami Soci\u00ebteit Nederland"
+      "name": "Origami Soci\u00ebteit Nederland",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "pbailey",
-      "name": "Perry Bailey"
+      "name": "Perry Bailey",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "pschulz",
-      "name": "Philip Schulz"
+      "name": "Philip Schulz",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "rjlang",
       "name": "Robert J. Lang",
-      "site": "https://langorigami.com/"
+      "site": "https://langorigami.com/",
+      "youtube": null
     },
     {
       "id": "rglynn",
@@ -190,44 +272,63 @@
     },
     {
       "id": "rkoh",
-      "name": "Ronald Koh"
+      "name": "Ronald Koh",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "shecht",
-      "name": "Stephen Hecht"
+      "name": "Stephen Hecht",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "schen",
-      "name": "Sy Chen"
+      "name": "Sy Chen",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "ttakahama",
-      "name": "Toshie Takahama"
+      "name": "Toshie Takahama",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "tchung",
-      "name": "Trang (Tracy) Chung"
+      "name": "Trang (Tracy) Chung",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "tklam",
       "name": "Tung Ken Lam",
-      "site": "https://www.foldworks.net/home/about/"
+      "site": "https://www.foldworks.net/home/about/",
+      "youtube": null
     },
     {
       "id": "vvann",
-      "name": "Valerie Vann"
+      "name": "Valerie Vann",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "wbrown",
-      "name": "Wayne Brown"
+      "name": "Wayne Brown",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "wchan",
-      "name": "Winston Chan"
+      "name": "Winston Chan",
+      "site": null,
+      "youtube": null
     },
     {
       "id": "yevron",
-      "name": "Yuval Evron"
+      "name": "Yuval Evron",
+      "site": null,
+      "youtube": null
     }
   ],
   "diagrams": [

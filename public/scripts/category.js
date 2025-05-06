@@ -38,10 +38,11 @@ async function loadCategory() {
                     <a href="${DIAGRAM_BASE_PATH}${diagram.filename}">PDF</a>
                 </td>
                 <td>${diagram.title}</td>
-                <td>${diagram.difficulty}</td>
+                <td id="difficulty-row">${diagram.difficulty}</td>
                 <td>${creator?.name}</td>
             `;
             tableBody.appendChild(row);
+            document.getElementById('page-title').textContent = '';
         })
     } catch (e) {
         console.error('Error:', e);
