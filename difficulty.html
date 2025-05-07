@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./scripts/theme-init.js"></script>
+
+    <title>NewOrigami</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+            <h1>Welcome to the new Origami.com</h1>
+            <div id="dev-name">
+                <p>A website by Adinah Levi</p>
+                <button id="theme-toggle">🌒/☀️</button>
+            </div>
+        </header>
+
+      <main>
+        <p>← Back to <a href="./index.html">Main Page</a></p>
+
+        <hr />
+
+        <p id="page-title">Loading Diagrams...</p>
+        <table id="difficulty-table">
+          <thead>
+            <tr>
+              <th>↓</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Creator</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <hr />
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script type="module" src="./scripts/difficulty.js"></script>
+    <script type="module" src='./scripts/themeToggle.js'></script>
+    <script type="module" src="./scripts/footer.js"></script>
+  </body>
+</html>

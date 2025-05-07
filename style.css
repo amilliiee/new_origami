@@ -1,0 +1,259 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+  HTML content. To learn how to do something, just try searching Google for questions like
+  "how to change link color." */
+:root {
+  --light-background-color: #fdf4dc;
+  --dark-background-color: #1a1d23;
+  --off-white: #f8f4e9;
+  --near-black: #0f0f0f;
+  --link: #0099ff;
+  --link-visited: #0066ff;
+  --link-hover: #0033ff;
+  --link-active: #0000ff;
+  --button-dark-mode: #616161;
+  --button-light-mode: #d3d3d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-background-color);
+  color: var(--near-black);
+  font-family: 'Consolas';
+  height: 100vh;
+}
+
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--off-white)
+}
+
+pre span {
+  font-size: 8px;
+}
+
+a {
+  color: #7fb8ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
+  margin-bottom: 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#quick-summary h4 {
+  margin-bottom: 8px;
+}
+
+.update-info {
+  display: flex;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+#last-updated::after {
+  content: "|";
+  margin-left: 12px;
+}
+
+hr {
+  margin: 12px 0;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main h1 {
+  margin-bottom: 8px;
+}
+
+/* updates page */
+.update-item {
+  margin-bottom: 12px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.update-header {
+  cursor: pointer;
+  padding: 8px 12px;
+  background: #414141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-header:hover {
+  background: #7e7e7e;
+}
+
+.update-date {
+  font-weight: bold;
+  color: var(--off-white);
+}
+
+.toggle-icon {
+  font-size: 0.9em;
+  color: var(--visited-link);
+}
+
+.update-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: #414141;
+}
+
+.update-content.show {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 12px;
+  border-top: 1px solid #7e7e7e;
+}
+
+.update-text {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.no-updates, .error {
+  padding: 15px;
+  text-align: center;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#difficulty-table, #category-table, #diagram-table {
+  text-align: center;
+  
+}
+
+table, th, td {
+  border: 1px solid gray;
+}
+
+tbody {
+  text-align: start;
+}
+
+th, td {
+  padding: 2px 3px;
+}
+
+#difficulty-row {
+  text-align: center;
+}
+
+.pagination-container button {
+  border: none;
+  background: none;
+  color: var(--link);
+  margin: 0 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination-number.active {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.filter-controls {
+  margin-bottom: 8px;
+}
+
+.dropdown-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.filter-controls button {
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: var(--button-light-mode);
+  color: var(--near-black);
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dropdown-filters select {
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: var(--button-light-mode);
+  color: var(--near-black);
+  padding: 2px;
+  cursor: pointer;
+}
+
+.dark-mode .filter-controls button {
+  background-color: var(--button-dark-mode);
+  color: var(--off-white);
+  border-color: var(--near-black);
+}
+
+.dark-mode .dropdown-filters select {
+  background-color: var(--button-dark-mode);
+  color: var(--off-white);
+  border-color: var(--near-black);
+}
+
+#diagram-count {
+  margin-bottom: 12px;
+}

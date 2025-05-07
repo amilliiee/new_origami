@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./scripts/theme-init.js"></script>
+
+    <title>NewOrigami - Origami Archive</title>
+
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" href="./favicon.png">
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <h1>Welcome to the new Origami.com</h1>
+        <div id="dev-name">
+          <p>A website by Adinah Levi</p>
+          <button id="theme-toggle">🌒/☀️</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="hero">
+          <section id="quick-summary">
+            <h4>NewOrigami is the spiritual successor to <a href="https://web.archive.org/web/20130317080729/http://www.origami.org/index.html">Origami.com</a>, formerly by Alex Barber.</h4>
+            <p>This is an archive dedicated to preserving and sharing as many publicly-available origami diagrams as possible, with a heavy focus on diagrams shared on defunct sites or found on the Wayback Machine.</p>
+          </section>
+          
+          <section id="contributing">
+            <p>In the future I would like to turn this into a giant hub of free diagrams contributed by the community.</p>
+            <p>
+              Have a diagram you'd like to be shared here? Just upload it to any file transfer site and comment the link!<br>
+              Have a creator you'd like to share? Comment their site and/or YouTube Channel and I'll also add it!
+            </p>
+          </section>
+
+          <section id="quick-look">
+            <p>All diagrams are presented in PDF format.</p>
+            <p>Currently Hosting: 169 Diagrams</p>
+          </section>
+
+          <section id="updates">
+            <p>This site is regularly being updated daily at 0:00 EST, please follow the <a href="https://neocities.org/site/neworigami">site</a> and leave feedback and comments in the <a href="http://neworigami.atabook.org">guestbook</a>.</p>
+            <div class="update-info">
+              <p id="last-updated">Last updated: <a href="./updates.html" id="update-date"></a></p>
+              <a href="./todo.html">Planned updates</a>
+            </div>
+            <p>If you are having troubles seeing the updates, try refreshing the page</p>
+          </section>
+        </div>
+
+        <hr>
+
+        <div class="all-diagrams">
+          <h2>All Diagrams</h2>
+          <a href="./all-diagrams.html" id="all-diagrams">Sorted by Name</a>
+        </div>
+
+        <hr />
+
+        <!-- <div class="by-difficulty">
+          <h2>Diagrams by Difficulty</h2>
+          <ul id="difficulty-list">
+            <li>Loading...</li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="by-category">
+          <h2>Diagrams by Category</h2>
+          <ul id="categories-list">
+            <li>Loading...</li>
+          </ul>
+        </div>
+
+
+        <hr /> -->
+
+        <div class="by-creator">
+          <h2>Creator Links</h2>
+          <div id="creators-pagination" class="pagination-container"></div>
+
+          <hr />
+          
+          <ul id="creators-list">
+            <li>Loading...</li>
+          </ul>
+        </div>
+  
+        <hr />
+
+      </main>
+
+      <footer>
+      </footer>
+    </div>
+
+    <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/themeToggle.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
+
+  </body>
+</html>
