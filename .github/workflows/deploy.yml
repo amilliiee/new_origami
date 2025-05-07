@@ -5,7 +5,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:  # Add this block
+    permissions:
       contents: write
       pages: write
       id-token: write
