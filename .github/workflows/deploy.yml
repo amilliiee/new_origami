@@ -1,14 +1,18 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: ["main"]  # Run on pushes to main branch
+    branches: ["main"]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:  # Add this block
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to GH Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public/  # Point to your 'public' folder
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token
+          publish_dir: ./public/  # Your folder
