@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="./scripts/theme-init.js" defer></script>
+    <script src="./scripts/theme-init.js"></script>
 
     <title>NewOrigami • Artist</title>
 
@@ -26,7 +26,52 @@
 
         <hr />
 
+        <p id="diagram-count"></p>
+
         <p id="page-title">Loading...</p>
+        <div id="diagram-table-pagination" class="pagination-container"></div>
+
+        <hr />
+        
+        <div class="filter-controls">
+          <div class="dropdown-filters">
+            <div class="filter-group">
+              <label for="difficulty-filter">Difficulty:</label>
+              <select id="difficulty-filter">
+                  <option value="all">All</option>
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+              </select>
+            </div>
+          
+            <div class="filter-group">
+              <label for="category-filter">Category:</label>
+              <select id="category-filter">
+                  <option value="all">All Categories</option>
+                  <!-- Will be populated by JS -->
+              </select>
+            </div>
+          
+            <div class="filter-group">
+              <label for="creator-filter">Creator:</label>
+              <select id="creator-filter">
+                  <option value="all">All Creators</option>
+                  <!-- Will be populated by JS -->
+              </select>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <div class="sort-buttons">
+                <button class="sort-btn active" data-sort="title">Sort by Name</button>
+                <button class="sort-btn" data-sort="category">Sort by Category</button>
+                <button class="sort-btn" data-sort="difficulty">Sort by Difficulty</button>
+                <button id="reset-filters">Reset</button>
+            </div>
+          </div>
+        </div>
+
         <table id="diagram-table">
           <thead>
             <tr>
@@ -43,50 +88,12 @@
         <hr />
       </main>
 
-      <pre>
-                          |b
-                           ||
-                           ||,
-                           |'\
-                            |`|
-                            | `|
-                            '| |.
-                             | `L
-                             |  |,
-                             `|  |.                              _,/7
-                              |  `|                       __,---'' /
-                              |   `|              __,---'"   ..- ./
-                              ||   |      _.--=/'',--=-,,  -    ,/
-                              `|   \,/'''`\,     /'   >  \     /'
-                               | ,/'  `. .  `\ ,/'   / \  \   /'
-                       ___,----Y-'      Y     7'   .'.' `\ \ /'
-                   _-/''        `\.     .   ,/'    /.'    `\\ 
-               _,-''          ---  \    `  /'    ./.'   __-' "
-            _/''     .--            `\    /'     /,'_--'
-         ,/''  ..                     `"\_     ./ /='
-     .,/'                             .--"\    / / 
-    &lt;------------------,_____      ,/~'  \ | ./ .'
-                            `"""""""      `|_/\ /
-                                            '  '
-      </pre>
-
-      <footer>
-        <p>
-          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a>
-          favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </p>
-
-        <p>
-          Origami Crane ASCII art from
-          <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
-        </p>
-
-        <p>All rights for diagrams reserved by respective original creators.</p>
-      </footer>
+      <footer></footer>
     </div>
 
     <script type="module" src="./scripts/all-diagrams.js"></script>
     <script type="module" src="./scripts/themeToggle.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
 
   </body>
 </html>

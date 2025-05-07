@@ -2,12 +2,16 @@
   HTML content. To learn how to do something, just try searching Google for questions like
   "how to change link color." */
 :root {
-  --light-backgorund-color: #fdf4dc;
+  --light-background-color: #fdf4dc;
   --dark-background-color: #1a1d23;
   --off-white: #f8f4e9;
   --near-black: #0f0f0f;
-  --active-link: #1c76fd;
-  --visited-link: #5491ee;
+  --link: #0099ff;
+  --link-visited: #0066ff;
+  --link-hover: #0033ff;
+  --link-active: #0000ff;
+  --button-dark-mode: #616161;
+  --button-light-mode: #d3d3d3;
 }
 
 * {
@@ -23,8 +27,13 @@ body {
   height: 100vh;
 }
 
-main {
-  flex: 1;
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--off-white)
+}
+
+pre span {
+  font-size: 8px;
 }
 
 a {
@@ -32,12 +41,23 @@ a {
   text-decoration: none;
 }
 
-a:active {
-  color: var(--active-link);
+a:visited {
+  color: var(--link-visited);
 }
 
-a:visited {
-  color: var(--visited-link);
+a:hover {
+  color: var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+img {
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .page-container {
@@ -158,11 +178,6 @@ main h1 {
   transition: background-color 0.2s;
 }
 
-.dark-mode {
-  background-color: var(--dark-background-color);
-  color: var(--off-white)
-}
-
 #difficulty-table, #category-table, #diagram-table {
   text-align: center;
   
@@ -182,4 +197,63 @@ th, td {
 
 #difficulty-row {
   text-align: center;
+}
+
+.pagination-container button {
+  border: none;
+  background: none;
+  color: var(--link);
+  margin: 0 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination-number.active {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.filter-controls {
+  margin-bottom: 8px;
+}
+
+.dropdown-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.filter-controls button {
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: var(--button-light-mode);
+  color: var(--near-black);
+  padding: 3px;
+  cursor: pointer;
+}
+
+.dropdown-filters select {
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: var(--button-light-mode);
+  color: var(--near-black);
+  padding: 2px;
+  cursor: pointer;
+}
+
+.dark-mode .filter-controls button {
+  background-color: var(--button-dark-mode);
+  color: var(--off-white);
+  border-color: var(--near-black);
+}
+
+.dark-mode .dropdown-filters select {
+  background-color: var(--button-dark-mode);
+  color: var(--off-white);
+  border-color: var(--near-black);
+}
+
+#diagram-count {
+  margin-bottom: 12px;
 }

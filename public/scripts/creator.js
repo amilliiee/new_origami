@@ -1,8 +1,9 @@
 import {
     DIAGRAM_BASE_PATH,
+    DIFFICULTY_BASE_PATH,
+    DIFFICULTY_MAP,
+    sortByTitle,
     fetchData,
-    displayError,
-    sortByTitle
 } from './shared.js';
 
 async function loadDiagrams() {

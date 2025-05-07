@@ -1,6 +1,5 @@
 import {
     DIAGRAM_BASE_PATH,
-    DIFFICULTY_MAP,
     fetchData,
     sortByTitle
 } from './shared.js';
@@ -24,7 +23,7 @@ async function loadCategory() {
         if (filteredDiagrams.length === 0) {
             tableBody.innerHTML = `
                 <tr>
-                    <td colspan="4">No diagrams found for ${category} difficulty</td>
+                    <td colspan="4">No diagrams found for ${category}</td>
                 </tr>
             `;
             return;

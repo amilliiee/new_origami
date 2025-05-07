@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="./scripts/theme-init.js" defer></script>
+    <script src="./scripts/theme-init.js"></script>
 
     <title>NewOrigami - Origami Archive</title>
 
@@ -56,20 +56,18 @@
         <div class="all-diagrams">
           <h2>All Diagrams</h2>
           <a href="./all-diagrams.html" id="all-diagrams">Sorted by Name</a>
-          <!--<li><a href="./difficulty.html">All diagrams sorted by Category</a></li>-->
-          <!--<li><a href="./difficulty.html">All diagrams sorted by Difficulty</a></li>-->
         </div>
 
-        <hr>
+        <hr />
 
-        <div class="by-difficulty">
+        <!-- <div class="by-difficulty">
           <h2>Diagrams by Difficulty</h2>
           <ul id="difficulty-list">
             <li>Loading...</li>
           </ul>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="by-category">
           <h2>Diagrams by Category</h2>
@@ -78,74 +76,31 @@
           </ul>
         </div>
 
-          <!--
-          <ul><h2>Learner's Lair</h2></ul>
-          <li><a href="./intro/symbols.html">Symbols</a></li>
-          <li><a href="./intro/bases.html">Bases</a></li>
-          <li><a href="./intro/beginner.html">Beginner Models</a></li>
-          <hr>-->
-        <hr>
 
-        <!-- <div class="by-creator">
-          <h2>Diagrams by Creator</h2>
-          <ul id="creators-list">
-            <li>Loading...</li>
-          </ul>
-        </div> -->
+        <hr /> -->
+
         <div class="by-creator">
-          <h2>Diagrams by Creator</h2>
+          <h2>Creator Links</h2>
+          <div id="creators-pagination" class="pagination-container"></div>
+
+          <hr />
+          
           <ul id="creators-list">
             <li>Loading...</li>
           </ul>
-
         </div>
   
         <hr />
 
       </main>
 
-      <pre>
-                          |b
-                           ||
-                           ||,
-                           |'\
-                            |`|
-                            | `|
-                            '| |.
-                             | `L
-                             |  |,
-                             `|  |.                              _,/7
-                              |  `|                       __,---'' /
-                              |   `|              __,---'"   ..- ./
-                              ||   |      _.--=/'',--=-,,  -    ,/
-                              `|   \,/'''`\,     /'   >  \     /'
-                               | ,/'  `. .  `\ ,/'   / \  \   /'
-                       ___,----Y-'      Y     7'   .'.' `\ \ /'
-                   _-/''        `\.     .   ,/'    /.'    `\\ 
-               _,-''          ---  \    `  /'    ./.'   __-' "
-            _/''     .--            `\    /'     /,'_--'
-         ,/''  ..                     `"\_     ./ /='
-     .,/'                             .--"\    / / 
-    &lt;------------------,_____      ,/~'  \ | ./ .'
-                            `"""""""      `|_/\ /
-                                            '  '
-      </pre>
-
       <footer>
-        <p>
-          <a target="_blank" href="https://icons8.com/icon/10371/origami">Origami Swan</a> favicon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </p>
-            
-        <p>
-          Origami Crane ASCII art from <a href="https://www.asciiart.eu/art-and-design/origamis">asciiart.eu</a>
-        </p>
-            
-        <p>All rights for diagrams reserved by respective original creators.</p>
       </footer>
     </div>
 
     <script type="module" src="./scripts/index.js"></script>
-    <script type="module" src="./scripts/themeToggle.js"></script>
+    <script src="./scripts/themeToggle.js"></script>
+    <script type="module" src="./scripts/footer.js"></script>
 
   </body>
 </html>
